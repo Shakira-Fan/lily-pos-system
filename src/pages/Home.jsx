@@ -1,4 +1,5 @@
 import Nav from "../components/Nav";
+import FeatureProduct from "../sections/home/FeatureProduct";
 import Footer from "../sections/home/Footer";
 import Hero from "../sections/home/Hero";
 
@@ -6,11 +7,11 @@ const Home = () => {
   return (
    <main className="relative">
     <Nav/>
-    <section>
+    <section className="xl:bg-home bg-no-repeat bg-cover bg-primary-bg">
       <Hero/>
     </section>
-    <section className="padding">
-      
+    <section>
+      <FeatureProduct/>
     </section>
     <section className="padding">
       
