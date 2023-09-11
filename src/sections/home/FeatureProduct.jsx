@@ -26,9 +26,9 @@ const FeatureProduct = () => {
     return (
         <div className="padding-y px-1">
             <div className="flex flex-col justify-center items-center text-center">
-                <button className="bg-primary-orange text-white rounded-[5px] py-2 px-3">
+                <span className="bg-primary-orange text-white rounded-[5px] py-2 px-3">
                     產品特色
-                </button>
+                </span>
                 <h1 className="text-2xl md:text-3.5xl font-bold py-4">
                     更快、也更簡單！經營一家餐廳最好幫手
                 </h1>

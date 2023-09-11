@@ -1,4 +1,5 @@
 import Nav from "../components/Nav";
+import Experience from "../sections/home/Experience";
 import FeatureProduct from "../sections/home/FeatureProduct";
 import Footer from "../sections/home/Footer";
 import Hero from "../sections/home/Hero";
@@ -13,8 +14,8 @@ const Home = () => {
     <section>
       <FeatureProduct/>
     </section>
-    <section className="padding">
-      
+    <section>
+      <Experience/>
     </section>
     <section className="padding-x py-10">
       
