@@ -1,8 +1,8 @@
 const PricePlanCard = ({ iconUrl, plan, price, content, featureList, borderColor }) => {
     return (
-        <div className={`bg-secondary-white ${borderColor} border-[3px] w-[354px] max-sm:w-[300px] h-[507px] max-sm:h-[388px] rounded-3xl ${price === 999 ? 'my-8 shadow-xl' : 'mt-16'} max-sm:mt-0`}>
+        <div className={`bg-secondary-white ${borderColor} border-[3px] rounded-3xl ${price === 999 ? 'my-8 shadow-xl' : 'mt-16'} max-sm:my-4`}>
             <div className="pt-10 max-sm:pt-6 px-9 max-sm:px-[26px]">
-                <div className="flex justify-center items-center gap-4 max-sm:gap-3">
+                <div className="flex justify-center items-center gap-4 max-sm:gap-x-3">
                     <img src={iconUrl} alt="" />
                     <h5 className="font-bold text-lg max-sm:text-base">{plan}</h5>
                 </div>
@@ -28,7 +28,7 @@ const PricePlanCard = ({ iconUrl, plan, price, content, featureList, borderColor
                     )}
                 </div>
                 <div>
-                    <button className="bg-gray-e9 py-3 w-[282px] max-sm:w-[252px] rounded-[5px] hover:bg-secondary-yellow">選擇方案</button>
+                    <button className="bg-gray-e9 py-3 max-sm:px-[100px] px-[112px] max-sm:text-sm rounded-[5px] hover:bg-secondary-yellow">選擇方案</button>
                 </div>
             </div>
         </div>

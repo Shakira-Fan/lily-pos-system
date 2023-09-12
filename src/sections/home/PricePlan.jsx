@@ -54,7 +54,7 @@ const PricePlan = () => {
                     <p className="text-gray-9f text-base  max-sm:text-sm max-sm:px-8 leading-normal">不要讓昂貴的 POS 系統成為您開店的負擔！我們的系統以實惠的價格提供您所需的一切。
                     </p>
                 </div>
-                <div className="mt-8 flex justify-center items-center max-sm:flex-col gap-8">
+                <div className="mt-8 flex justify-center items-center max-sm:flex-col gap-x-8">
                     {pricePlanList.map(priceItem =>(
                         <PricePlanCard key={priceItem.price} {...priceItem}/>
                     ))}
