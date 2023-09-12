@@ -51,10 +51,10 @@ const PricePlan = () => {
                     <h1 className="text-2xl md:text-3.5xl font-bold py-6">
                         您絕對負擔的起的價格！
                     </h1>
-                    <p className="text-gray-9f text-base  max-sm:text-sm max-sm:w-full leading-normal">不要讓昂貴的 POS 系統成為您開店的負擔！我們的系統以實惠的價格提供您所需的一切。
+                    <p className="text-gray-9f text-base  max-sm:text-sm max-sm:px-8 leading-normal">不要讓昂貴的 POS 系統成為您開店的負擔！我們的系統以實惠的價格提供您所需的一切。
                     </p>
                 </div>
-                <div className="mt-8 flex justify-center gap-8">
+                <div className="mt-8 flex justify-center items-center max-sm:flex-col gap-8">
                     {pricePlanList.map(priceItem =>(
                         <PricePlanCard key={priceItem.price} {...priceItem}/>
                     ))}

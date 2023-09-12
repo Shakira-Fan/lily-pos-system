@@ -1,9 +1,9 @@
 const PricePlanCard = ({ iconUrl, plan, price, content, featureList,borderColor }) => {
     return (
-        <div className={`bg-white ${borderColor} border-primary-orange border-[3px] w-[354px] rounded-3xl py-10 px-9 ${price=== 999 ?'my-8 shadow-xl' :'mt-16'}`}>
-            <div className="flex justify-center items-center">
+        <div className={`bg-secondary-white ${borderColor} border-[3px] w-[354px] max-sm:w-[300px] h-[507px] max-sm:h-[388px] rounded-3xl py-10 max-sm:py-6 px-9 max-sm:px-[26px] ${price=== 999 ?'my-8 shadow-xl' :'mt-16'} max-sm:mt-0`}>
+            <div className="flex justify-center items-center gap-4 max-sm:gap-3">
                 <img src={iconUrl} alt="" />
-                <h5 className="font-bold text-lg">{plan}</h5>
+                <h5 className="font-bold text-lg max-sm:text-base">{plan}</h5>
             </div>
             <div className="flex flex-col justify-center items-center">
                 <p className="text-primary-orange text-4xl pb-2">
@@ -11,20 +11,23 @@ const PricePlanCard = ({ iconUrl, plan, price, content, featureList,borderColor 
                     {price}
                     {price !== 0 && <span className="text-base text-black"> / 月</span>}
                 </p>
-                <p className="text-gray-9f">{content}</p>
+                <p className="text-gray-9f max-sm:text-sm">{content}</p>
             </div>
-            <div className="mt-6 pt-6">
+            <hr  className="text-gray-9f w-full p-0"/>
+            <div className="mt-6">
                 <h1>DineTech 提供以下功能：</h1>
-                <div className="min-h-[168px]">
+                <div className="h-[168px] max-sm:h-[120px]">
                     {featureList.map((item, index) => (
-                        <div className="flex gap-2 my-4" key={item + index}>
+                        <div className="flex gap-2 my-4 max-sm:my-1" key={item + index}>
                             <img src="../imgs/home/icon_check.png" alt="" />
-                            <p>{item}</p>
+                            <p className="font-bold max-sm:text-sm">{item}</p>
                         </div>
                     )
                     )}
                 </div>
-                <button className="bg-gray-e9 py-3 w-[282px] rounded-[5px] hover:bg-secondary-yellow">選擇方案</button>
+                <div>
+                    <button className="bg-gray-e9 py-3 w-[282px] max-sm:w-[252px] rounded-[5px] hover:bg-secondary-yellow">選擇方案</button>
+                </div>
             </div>
         </div>
     )
