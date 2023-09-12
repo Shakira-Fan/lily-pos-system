@@ -24,7 +24,7 @@ const FeatureProduct = () => {
         }
     ]
     return (
-        <div className="padding-y px-1">
+        <div className="padding-y px-2">
             <div className="flex flex-col justify-center items-center text-center">
                 <span className="bg-primary-orange text-white rounded-[5px] py-2 px-3">
                     產品特色

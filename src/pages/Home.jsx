@@ -3,6 +3,7 @@ import Experience from "../sections/home/Experience";
 import FeatureProduct from "../sections/home/FeatureProduct";
 import Footer from "../sections/home/Footer";
 import Hero from "../sections/home/Hero";
+import PricePlan from "../sections/home/PricePlan";
 
 const Home = () => {
   return (
@@ -14,11 +15,11 @@ const Home = () => {
     <section>
       <FeatureProduct/>
     </section>
-    <section>
+    <section className="padding-b">
       <Experience/>
     </section>
-    <section className="padding-x py-10">
-      
+    <section className="bg-primary-bg">
+      <PricePlan/>
     </section>
     <section className="padding">
       
