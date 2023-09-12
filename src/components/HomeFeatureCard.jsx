@@ -2,7 +2,7 @@ const HomeFeatureCard = ({imgUrl,title,content}) => {
     return (
         <div className="reveal-content flex items-center max-sm:text-center max-sm:items-center flex-col md:flex-row max-md:items-start gap-4 py-4">
             <div>
-                <img src={imgUrl} alt="" height={64} width={64}/>
+                <img src={imgUrl} alt="" className="object-cover"/>
             </div>
             <div>
                 <h5 className="text-md md:text-lg font-bold">{title}</h5>

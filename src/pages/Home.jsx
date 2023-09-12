@@ -3,6 +3,7 @@ import Experience from "../sections/home/Experience";
 import FeatureProduct from "../sections/home/FeatureProduct";
 import Footer from "../sections/home/Footer";
 import Hero from "../sections/home/Hero";
+import PowerFeture from "../sections/home/PowerFeture";
 import PricePlan from "../sections/home/PricePlan";
 
 const Home = () => {
@@ -21,8 +22,8 @@ const Home = () => {
     <section className="bg-primary-bg">
       <PricePlan/>
     </section>
-    <section className="padding">
-      
+    <section className="padding-t">
+      <PowerFeture/>
     </section>
     <section className="bg-pale-blue padding">
       
