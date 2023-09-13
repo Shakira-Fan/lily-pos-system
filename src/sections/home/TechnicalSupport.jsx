@@ -18,7 +18,7 @@ const TechnicalSupport = () => {
                     <span className="md:block">我們都會全力以赴，確保您的生意不會因技術問題而受到影響。</span>
                 </p>
             </div>
-            <div className="flex justify-center max-sm:items-center mx-auto mt-4 px-16">
+            <div className="flex justify-center max-sm:items-center mx-auto mt-4 px-16 max-sm:px-0">
                 <img src="../imgs/home/img_tech.png" alt="" className="object-cover rounded-2xl w-[1180px] h-[484px] max-sm:w-[351px] max-sm:h-[400px]" />
             </div>
         </div>

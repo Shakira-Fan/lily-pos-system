@@ -23,7 +23,7 @@ const Home = () => {
     <section className="bg-primary-bg px-8">
       <PricePlan/>
     </section>
-    <section className="padding border-b border-gray-e9">
+    <section className="border-b border-gray-e9 padding-y">
       <PowerFeture/>
     </section>
     <section>
