@@ -5,6 +5,7 @@ import Footer from "../sections/home/Footer";
 import Hero from "../sections/home/Hero";
 import PowerFeture from "../sections/home/PowerFeture";
 import PricePlan from "../sections/home/PricePlan";
+import TechnicalSupport from "../sections/home/TechnicalSupport";
 
 const Home = () => {
   return (
@@ -19,14 +20,14 @@ const Home = () => {
     <section className="padding-b">
       <Experience/>
     </section>
-    <section className="bg-primary-bg">
+    <section className="bg-primary-bg px-8">
       <PricePlan/>
     </section>
-    <section className="padding-t">
+    <section className="padding border-b border-gray-e9">
       <PowerFeture/>
     </section>
-    <section className="bg-pale-blue padding">
-      
+    <section>
+      <TechnicalSupport/>
     </section>
     <section className="padding-x sm:py-32 py-16 w-full">
       
