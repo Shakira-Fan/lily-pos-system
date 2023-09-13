@@ -1,4 +1,5 @@
 import Nav from "../components/Nav";
+import BookingForm from "../sections/home/BookingForm";
 import Experience from "../sections/home/Experience";
 import FeatureProduct from "../sections/home/FeatureProduct";
 import Footer from "../sections/home/Footer";
@@ -29,8 +30,8 @@ const Home = () => {
     <section>
       <TechnicalSupport/>
     </section>
-    <section className="padding-x sm:py-32 py-16 w-full">
-      
+    <section className="bg-primary-bg">
+      <BookingForm/>
     </section>
     <section className="padding-x bg-black padding-t pb-8">
      <Footer/>
