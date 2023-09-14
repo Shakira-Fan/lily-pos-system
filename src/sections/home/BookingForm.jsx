@@ -81,7 +81,7 @@ const BookingForm = () => {
                         </div>
                     </div>
                     <div className="col-span-2 flex flex-col text-start">
-                        <label htmlFor="" className="mb-1">其他需求<span className="text-secondary-red">*</span></label>
+                        <label htmlFor="" className="mb-1">其他需求</label>
                         <textarea
                             rows="4"
                             name="other"
