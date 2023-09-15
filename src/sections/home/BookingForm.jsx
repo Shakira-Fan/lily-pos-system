@@ -18,32 +18,32 @@ const BookingForm = () => {
                 <form action="" className="grid grid-cols-2 gap-4">
                     <div className="max-sm:col-span-2 flex flex-col text-start">
                         <label htmlFor="" className="mb-1">店家名稱<span className="text-secondary-red">*</span></label>
-                        <input type="text" className="text-xl border border-gray-d4 rounded-[5px] py-[5px]" />
+                        <input type="text" className="border border-gray-d4 rounded-[5px] py-[5px] pl-2" />
                     </div>
                     <div className="max-sm:col-span-2 flex flex-col text-start">
                         <label htmlFor="" className="mb-1">Email<span className="text-secondary-red">*</span></label>
-                        <input type="text" className="text-xl border border-gray-d4 rounded-[5px] py-[5px]" />
+                        <input type="text" className="border border-gray-d4 rounded-[5px] py-[5px] pl-2" />
                     </div>
                     <div className="max-sm:col-span-2 flex flex-col text-start">
                         <label htmlFor="" className="mb-1">聯絡人<span className="text-secondary-red">*</span></label>
-                        <input type="text" className="text-xl border border-gray-d4 rounded-[5px] py-[5px]" />
+                        <input type="text" className="border border-gray-d4 rounded-[5px] py-[5px] pl-2" />
                     </div>
                     <div className="max-sm:col-span-2 flex flex-col text-start">
                         <label htmlFor="" className="mb-1">聯絡電話<span className="text-secondary-red">*</span></label>
-                        <input type="text" className="text-xl border border-gray-d4 rounded-[5px] py-[5px]" />
+                        <input type="text" className="border border-gray-d4 rounded-[5px] py-[5px] pl-2" />
                     </div>
                     <div className="max-sm:col-span-2 flex flex-col text-start">
                         <label htmlFor="" className="mb-1">所在縣市<span className="text-secondary-red">*</span></label>
-                        <select name="city" id="city" className="text-xl border border-gray-d4 rounded-[5px] py-[5px]">
+                        <select name="city" id="city" className="border border-gray-d4 rounded-[5px] py-[5px]">
                             {contactCityOptions.map(item => (
-                                <option key={item.name} name={item.name} value={item.value}>{item.value}</option>
+                                <option key={item.name} name={item.name} value={item.value} className="py-[5px]">{item.value}</option>
                             ))}
 
                         </select>
                     </div>
                     <div className="max-sm:col-span-2 flex flex-col text-start">
                         <label htmlFor="" className="mb-1">希望聯繫時段<span className="text-secondary-red">*</span></label>
-                        <select name="time" id="time" className="text-xl border border-gray-d4 rounded-[5px] py-[5px]">
+                        <select name="time" id="time" className="border border-gray-d4 rounded-[5px] py-[5px]">
                             {contactPeriodOptions.map(item => (
                                 <option key={item.value} value={item.value}>{item.name}</option>
                             ))}
@@ -55,7 +55,7 @@ const BookingForm = () => {
                             {contactOperationOptions.map((item) => (
                                 <div key={item.value}>
                                     <input type="radio" id={item.value} name={item.name} value={item.value} />
-                                    <label htmlFor={item.label}>{item.label}</label>
+                                    <label htmlFor={item.label} className="ml-1">{item.label}</label>
                                 </div>
                             ))}
                         </div>
@@ -63,7 +63,7 @@ const BookingForm = () => {
                     </div>
                     <div className="max-sm:col-span-2 flex flex-col text-start">
                         <label htmlFor="" className="mb-1">從何處知道我們<span className="text-secondary-red">*</span></label>
-                        <select name="whereKnowUs" id="whereKnowUs" className="text-xl border border-gray-d4 rounded-[5px] py-[5px]">
+                        <select name="whereKnowUs" id="whereKnowUs" className="border border-gray-d4 rounded-[5px] py-[5px]">
                             {contactSourceOptions.map(item => (
                                 <option key={item.name} name={item.name} value={item.value}>{item.value}</option>
                             ))}
@@ -73,7 +73,7 @@ const BookingForm = () => {
                         <label htmlFor="" className="mb-1">詢問內容（可複選）<span className="text-secondary-red">*</span></label>
                         <div className="flex flex-wrap">
                             {contactReasonOptions.map(item => (
-                                <div key={item.value} className="py-1 ml-1">
+                                <div key={item.value} className="py-1 mx-1">
                                     <input type="checkbox" id="scales" name={item.name} value={item.value} className="mr-1 checked:text-primary-orange checked:ring-transparent focus:ring-transparent focus:border-gray-9f checked:bg-primary-orange" />
                                     <label htmlFor="scales">{item.label}</label>
                                 </div>

@@ -33,7 +33,7 @@ const Home = () => {
     <section className="bg-primary-bg">
       <BookingForm/>
     </section>
-    <section className="padding-x bg-black padding-t pb-8">
+    <section className="padding bg-black">
      <Footer/>
     </section>
    </main>
